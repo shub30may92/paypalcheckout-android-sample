@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">paypalcheckout-android-sample</string>
+    <string name="paypalxo_deep_link">merchantsample://paypal/authorize</string>
+    <string name="paypalxo_client_id">[Your Client ID]</string>
+</resources>
