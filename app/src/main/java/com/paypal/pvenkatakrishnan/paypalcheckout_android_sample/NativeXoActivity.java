@@ -22,7 +22,8 @@ import net.openid.appauth.ResponseTypeValues;
 
 public class NativeXoActivity extends AppCompatActivity{
 
-    public static String MY_CLIENT_ID = "ARcshMywpyPeIC38POXa2JuUseTcYRjsVcdtnTrB64KV0R_MhqfFPzcV76ajQPmEUDKo8jw7zJS423ch";
+    public static String MY_CLIENT_ID = "AX93NErgg-F0VeBQ6pNLwa2VKQdw3BnKDvBnasIe_pKoprQyz6NiSf6XS7I1Qtro-VD4GP-AJdjT0Uz4"; //SandBox
+//    public static String MY_CLIENT_ID = "ARcshMywpyPeIC38POXa2JuUseTcYRjsVcdtnTrB64KV0R_MhqfFPzcV76ajQPmEUDKo8jw7zJS423ch"; //LIVE
     public static Uri MY_REDIRECT_URI = Uri.parse("https://paypalmerchant.herokuapp.com/thankyou");
 
     AuthorizationServiceConfiguration serviceConfig =
