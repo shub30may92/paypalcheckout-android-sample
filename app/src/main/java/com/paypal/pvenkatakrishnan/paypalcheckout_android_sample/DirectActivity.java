@@ -36,7 +36,7 @@ public class DirectActivity extends AppCompatActivity {
     public void handleClick(View view) {
         System.out.println("In button click");
         AsyncHttpClient client = new AsyncHttpClient();
-
+        RequestParams params = new RequestParams();
         client.get("https://paypalmerchant.herokuapp.com/getPPCheckoutURL", new AsyncHttpResponseHandler() {
 
             @Override

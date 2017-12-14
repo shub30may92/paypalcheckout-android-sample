@@ -10,9 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.paypal.pvenkatakrishnan.paypalcheckout_android_sample.SimpleActivity">
 
-    <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/webview"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/catalyst_redbox_background"/>
 </RelativeLayout>

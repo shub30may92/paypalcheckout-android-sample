@@ -30,7 +30,18 @@
         </activity>
         <activity android:name=".CheckoutjsActivity"/>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".SimpleActivity"/>
+        <activity android:name=".SimpleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="myhost.com"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".DirectActivity"/>
     </application>
 
