@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.paypal.pvenkatakrishnan.paypalcheckout_android_sample">
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
@@ -7,15 +8,28 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".NativeXoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"
+                    android:host="app.example.com"
+                    android:path="/oauth2redirect"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".CheckoutjsActivity"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".SimpleActivity"/>
         <activity android:name=".DirectActivity"/>
     </application>
